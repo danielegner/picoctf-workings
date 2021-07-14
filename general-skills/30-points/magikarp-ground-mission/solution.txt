@@ -1,0 +1,19 @@
+Launch instance on the picoCTF website.
+username = ctf-player
+password = 6dee9772
+
+Connect via SSH:
+$ ssh ctf-player@venus.picoctf.net -p 56510
+
+Cat first part of flag and instructions to second:
+$ cat 1of3.flag.txt
+$ cat instructions-to-2of3.txt
+
+Cat second part of flag and instructions to third:
+$ cd /
+$ cat 2of3.flag.txt
+$ cat instructions-to-3of3.txt
+
+Cat third part of flag:
+$ cd ~
+$ cat 3of3.flag.txt

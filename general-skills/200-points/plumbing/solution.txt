@@ -1,0 +1,5 @@
+Connect and pipe response to file:
+$ nc jupiter.challenges.picoctf.org 14291 > file
+
+Grep file for flag:
+$ cat file | grep picoCTF

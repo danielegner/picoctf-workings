@@ -1,0 +1,2 @@
+Connect and acquire flag:
+nc jupiter.challenges.picoctf.org 25103

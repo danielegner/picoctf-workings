@@ -1,0 +1,6 @@
+Python script to convert base 10 integer into binary:
+
+#!/usr/bin/env python3
+
+x = 42
+print(bin(x))

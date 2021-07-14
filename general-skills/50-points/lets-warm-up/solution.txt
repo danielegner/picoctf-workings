@@ -1,0 +1,6 @@
+Use python script to convert 0x70 into ASCII:
+
+#!/usr/bin/env python3
+
+x = 70
+print(chr(int(str(x), 16)))

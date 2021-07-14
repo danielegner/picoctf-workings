@@ -1,0 +1,8 @@
+Download zip archive:
+$ wget https://mercury.picoctf.net/static/a350754a299cb58988d6d47aed5be3ba/Addadshashanammu.zip
+
+Unzip the archive:
+$ unzip Addadshashanammu.zip
+
+Run binary, using tab to autocomplete directory names:
+$ ./Addadshashanammu/Almurbalarammi/Ashalmimilkala/Assurnabitashpi/Maelkashishi/Onnissiralis/Ularradallaku/fang-of-haynekhtnamet

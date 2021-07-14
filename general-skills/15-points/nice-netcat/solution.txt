@@ -1,0 +1,16 @@
+Connect to server and acquire response:
+$ nc mercury.picoctf.net 49039 > data
+
+
+Write python script to convert the integers to ascii characters and display on a single line:
+#!/usr/bin/env python3
+
+file = open('data')
+
+for elem in file:
+    print(chr(int(elem)), end='')
+
+
+Run python script:
+$ chmod +x converter.py
+$ ./converter.py

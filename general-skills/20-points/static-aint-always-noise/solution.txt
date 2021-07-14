@@ -1,0 +1,10 @@
+Download binary and bash script:
+$ wget https://mercury.picoctf.net/static/e9dd71b5d11023873b8abe99cdb45551/static
+$ wget https://mercury.picoctf.net/static/e9dd71b5d11023873b8abe99cdb45551/ltdis.sh
+
+Run bash script against binary:
+$ chmod +x ltdis.sh
+$ ./ltdis.sh static
+
+Grep flag from the strings file that was produced:
+$ cat static.ltdis.strings.txt | grep picoCTF

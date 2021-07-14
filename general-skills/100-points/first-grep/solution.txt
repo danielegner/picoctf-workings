@@ -1,0 +1,5 @@
+Download file:
+$ wget https://jupiter.challenges.picoctf.org/static/315d3325dc668ab7f1af9194f2de7e7a/file
+
+Grep for flag:
+$ cat file | grep picoCTF
