@@ -1,0 +1,22 @@
+Download lyrics.txt:
+$ wget https://jupiter.challenges.picoctf.org/static/96904d361d61fada5bd2d13536706f9a/lyrics.txt
+
+
+Using the docs at https://codewithrockstar.com/docs, manually decode lyrics.txt from Rockstar to readable:
+The code checks STDIN input twice, and to print the flag you must provide input of '10' followed by '170'.
+
+
+Run the lyrics code with the above input using https://codewithrockstar.com/online. Save the resulting output.
+
+
+Convert output to ascii using python script:
+#!/usr/bin/env python3
+
+print('picoCTF{', end='')
+
+with open('rockstar-output.txt', 'r') as f:
+    for elem in f:
+        print(chr(int(elem)), end='')
+
+print('}')
+

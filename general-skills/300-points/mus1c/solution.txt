@@ -1,0 +1,24 @@
+Download file:
+$ wget https://jupiter.challenges.picoctf.org/static/c0863a3b0170d6dd176be3a595b4b75e/lyrics.txt
+
+
+Failed attempt 1:
+Wrote a python script to strip all spaces from lyrics.txt and replace all instances of 'i' with '1'.
+This flag was not accepted due to its length, so this approach must be a dead end.
+
+
+Use a Rockstar interpreter to decode lyrics.txt:
+The hint suggests the lyrics are code, written in an esoteric programming language called 'Rockstar'.
+Go to https://codewithrockstar.com/online and paste the contents of lyrics.txt into the interpreter.
+
+
+Save the output to a file and convert to ascii using a python script:
+#!/usr/bin/env python3
+
+print('picoCTF{', end='')
+
+with open('rockstar-interpreted.txt', 'r') as f:
+    for elem in f:
+        print(chr(int(elem)), end='')
+
+print('}')
